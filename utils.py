@@ -5,7 +5,7 @@ from nltk.stem import WordNetLemmatizer
 
 # Download resources only once
 def download_nltk_resources():
-    nltk.download('stopwords'
+    nltk.download('stopwords')
     nltk.download('punkt')
     nltk.download('punkt_tab')  
     nltk.download('wordnet')
