@@ -3,16 +3,10 @@ import string
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-# Download resources only once
-def download_nltk_resources():
-    nltk.download('stopwords')
-    nltk.download('punkt')
-    nltk.download('punkt_tab')  
-    nltk.download('wordnet')
-    nltk.download('omw-1.4')
-
-# Run the function once when utils.py is imported
-download_nltk_resources()
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
